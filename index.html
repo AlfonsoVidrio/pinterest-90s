@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinterest 90s is a web application that allows you to search for images of your favorite categories.">
+    <meta name="author" content="Alfonso Manuel Vidrio Lizaola">
+
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Pinterest 90s</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <aside class="sidebar">
+            <div>
+                <div class="logo-section">
+                    <span class="logo-icon">P</span>
+                    <h1 class="logo-text">Pinterest</h1 >
+                </div>
+
+                <div class="search-section">
+                    <div class="search-input-wrapper">
+                        <img src="./images/pikachu.gif" alt="gif pikachu" class="gif-pikachu">
+                        <input id="search-input" class="search-input" type="text" placeholder="Type your search">
+                    </div>
+
+                    <div class="search-button-wrapper">
+                        <img src="images/cat.gif" alt="gif cat" class="gif-cat">
+                        <button id="search-button" class="search-button">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-section">
+                <div class="categories-header">
+                    <img src="./images/arrow.gif" alt="categories" class="categories-icon">
+                    <h2 class="categories-title">Categories</h2>
+                </div>
+                <ul class="categories-list">
+                    <div>
+                        <li class="category-item"><a href="#" class="category-link">Art</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Photography</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Nature</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Travel</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Music</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Movies</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Books</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Sports</a></li>
+                    </div>
+                    <div>
+                        <li class="category-item"><a href="#" class="category-link">Food</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Fashion</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Architecture</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Technology</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Science</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Health</a></li>
+                        <li class="category-item"><a href="#" class="category-link">Education</a></li>
+                        <li class="category-item"><a href="#" class="category-link">History</a></li>
+                    </div>
+                </ul>
+                <img src="./images/pacman.gif" alt="gif Pac-Man" class="gif-pacman">
+            </div>
+        </aside>
+
+        <div id="image-container" class="image-container">
+            <header class="header">
+                <div class="header-content">
+                    <img src="./images/star.gif" alt="gif star" class="gif-star">
+                    <div>
+                        <marquee class="header-title"  behavior="scroll" direction="left">Welcome to Pinterest 90s! Enjoy your stay!</marquee>
+                        <div class="rainbow-line"></div>
+                    </div>
+                    <img src="./images/star.gif" alt="gif star" class="gif-star">
+                </div>
+                <div>
+                    <a href="https://support.microsoft.com/es-es/windows/obtener-el-reproductor-de-windows-media-81718e0d-cfce-25b1-aee3-94596b658287" target="_blank" id="media-ad">
+                        <img src="./images/windowsmedia7.gif" alt="gif ad windows media" class="gif-windows">
+                    </a>
+                    <img src="./images/visitor-counter.gif" alt="visitor-counter" class="gif-visitor-counter" id="visitor-counter">
+                </div>
+
+            </header>
+            <div id="image-results" class="results-container"></div>
+        </div>
+    </main>
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up">
+                <img src="./images/arrow.png" alt="img arrow" class="arrow">
+            </i>
+        </div>
+    </div>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/dom.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
