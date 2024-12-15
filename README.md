@@ -30,14 +30,14 @@ Pinterest 90s is a web application that allows you to search for images and gifs
         GIPHY_API_KEY: 'your_giphy_api_key'
     };
     ```
+Note: For security reasons, it is recommended to use a backend server to store API keys. Storing them directly in the frontend is not secure.
 
 ## Usage
-
-1. Open the `index.html` file in your browser.
-2. Use the search bar to find images and gifs.
-3. Click on the categories to filter the results.
-4. Scroll down to load more results automatically.
-
+1. Open the project in a live server environment. For example, you can use the Live Server extension for Visual Studio Code, or any similar tool.
+2. Once the server is running, open the index.html file in your browser.
+3. Use the search bar to find images and gifs.
+4. Click on the category links to filter the results.
+5. Scroll down to load more results automatically.
 ## Project Structure
 
 - `index.html`: Main application file.
